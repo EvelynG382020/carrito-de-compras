@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../images/logo_size_invert_nav.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="../css/custom.css">
+  <title>Contacto</title>
+</head>
+<body>
+  <header>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img class="bg-img m-3 redondo" src="../images/logo_size_nav.jpg" alt="logo-nav"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="../index.html">Descripción</a>
+            <a class="nav-link" href="../index.html">Servicios</a>
+            <a class="nav-link active" aria-current="page" href="../index.html">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <form id="form">
+      <div class="container mt-5" style="max-width: 30rem;">
+        <h1 class="card-title py-3 text-center">Formulario de contacto</h1>
+        <div class="card mb-3 color-card-form">
+          <div class="card-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Ingresa tu email</label>
+              <input id="email" type="email" class="form-control mb-3" id="exampleFormControlInput1" aria-required="true" placeholder="name@example.com">
+              <label for="exampleFormControlInput2" class="form-label">Nombre</label>
+              <input id="campoNombre" type="text" class="form-control mb-3" id="exampleFormControlInput2" aria-required="true">
+              <label for="exampleFormControlInput3" class="form-label">Telefono</label>
+              <input id="number" type="number" class="form-control mb-3" id="exampleFormControlInput3" aria-required="true" placeholder="+569 12345678">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label color-text">Mensaje</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>          
+            <button id="button-form" type="submit" class="btn-lg btn-secondary fw-bold shrink text-white" style="background-color: rgb(105, 56, 105);">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <div class="container p-4">
+      <div class="row g-4 d-flex justify-content-between align-content-between">
+        <div class="col-12 col-sm-6 col-md-6 text-center p-3" style="width: 20rem;">
+          <img class="card-img-top" src="../images/logo_size_footer.jpg" alt="logo-footer">
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-2">
+          <a href="contact.html"><h6 class="text-uppercase mb-4 font-weight-bold grow">Contacto</h6></a>
+          <p><i class="bi bi-person-lines-fill mr-3"></i> Agente Evelyn Gomez Frez</p>
+          <p><i class="bi bi-house-door mr-3"></i> Chile, Providencia 10012</p>
+          <p><i class="bi bi-envelope mr-3"></i> info@gmail.com</p>
+          <a href="https://wa.me/56984487732"><p><i class="bi bi-whatsapp mr-3"></i> 569 12345678</p></a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/contact.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

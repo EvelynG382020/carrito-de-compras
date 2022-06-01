@@ -1,0 +1,43 @@
+
+[
+  {
+    "id": 0,
+    "modelo": "Buda",
+    "precio": 10000,
+    "descripcion": "Buda 30x30 en color oro",
+    "cantidad": 0,
+    "img": "images/buda.jpeg"
+  },
+  {
+    "id": 1,
+    "modelo": "Ganesha",
+    "precio": 20000,
+    "descripcion": "Buda 50x50 en color plata",
+    "cantidad": 0,
+    "img": "images/ganesha.jpeg"
+  },
+  {
+    "id": 2,
+    "modelo": "Buda Abhaya",
+    "precio": 40000,
+    "descripcion": "Buda 30x30 en color oro",
+    "cantidad": 0,
+    "img": "images/abhaya.jpeg"
+  },
+  {
+    "id": 3,
+    "modelo": "Buda Siddharta",
+    "precio": 18000,
+    "descripcion": "Buda 30x30 en color plata",
+    "cantidad": 0,
+    "img": "images/siddharta.jpeg"
+  },
+  {
+    "id": 4,
+    "modelo": "Buda Durmiente",
+    "precio": 25000,
+    "descripcion": "Buda 30x30 en color beige",
+    "cantidad": 0,
+    "img": "images/durmiente.jpeg"
+  }
+]
