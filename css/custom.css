@@ -11971,6 +11971,16 @@ img {
   border-radius: 10px;
 }
 
+a:active {
+  text-decoration: none;
+}
+
+.personalizado {
+  color: #221919;
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+}
+
 img {
   border-radius: 10px;
 }
