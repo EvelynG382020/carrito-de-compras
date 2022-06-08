@@ -174,7 +174,7 @@ const pintarFooter = () => {
 
 const btnAccion = e => {
   // console.log(e.target)
-  if(e.target.classList.contains('btn-info')){
+  if(e.target.classList.contains('btn-success')){
     
     const producto = productosSeleccionadoEnCarrito[e.target.dataset.id]
     producto.cantidad++
