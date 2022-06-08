@@ -16,12 +16,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
     productosSeleccionadoEnCarrito = JSON.parse(localStorage.getItem('carrito'))
     pintarCarrito()
   }
-
 })
 
 cards.addEventListener('click', e => { addCarrito(e)})
 
 items.addEventListener('click', e => {btnAccion(e)})
+
+const tableCarrito = document.getElementById('table-carrito')
+tableCarrito.onmouseover = () => {
+  tableCarrito.style.background = "yellow"
+}
 
 const fetchData = async ()=> {
   try{
@@ -44,7 +48,7 @@ const printCards = data => {
     templateCard.querySelector('img').setAttribute('src', img)
     templateCard.querySelector('h6').textContent = descripcion
     templateCard.querySelector('.btn-dark').dataset.id = id
-    
+
     const clone = templateCard.cloneNode(true)
     fragment.appendChild(clone)
     // console.log(producto)
@@ -54,25 +58,27 @@ const printCards = data => {
 
 //detectar el boton de las card del html y capturar el evento este add carrito es la función del evento, es lo q se ejecuta al presionar el boton y se ejecuta arriba en cards.addEventListener
 const addCarrito = e => {
-  // console.log(e.target)
-  // console.log(e.target.classList.contains('btn-dark'))
+ 
   if(e.target.classList.contains('btn-dark')){
+    e.target.onmouseover = () =>{
+      e.target.style.backgroundColor = 'green'
+    }
+    
+    Swal.fire({
+      title: 'Genial!',
+      text: 'Haz escogido un buen producto !',
+      icon: 'success',
+      confirmButtonText: 'Gracias'
+    })
+    
     setCarrito(e.target.parentElement)
   }
-  Swal.fire({
-    title: 'Genial!',
-    text: 'Haz escogido un buen producto !',
-    icon: 'success',
-    confirmButtonText: 'Gracias'
-  })
-  
   //detener cualquier otro evento q se pueda estar generando en este caso en el div padre cards
   e.stopPropagation()
 }
 
 //otra función que manipula el carrito, va a recibir un objeto, este objeto en esta función contiene todo lo que se selecciona con el boton comprar, todos sus propiedades, por eso será el setCarrito y así generar el objeto con todos los elementos del producto seleccionado
 const setCarrito = objeto => {
-  
   const producto = {
     id: objeto.querySelector('.btn-dark').dataset.id,
     modelo: objeto.querySelector('h5').textContent,
@@ -95,7 +101,7 @@ const pintarCarrito = ()=>{
     templateCarrito.querySelector('th').textContent = prod.id
     templateCarrito.querySelectorAll('td')[0].textContent = prod.modelo
     templateCarrito.querySelectorAll('td')[1].textContent = prod.cantidad
-    templateCarrito.querySelector('.btn-info').dataset.id = prod.id
+    templateCarrito.querySelector('.btn-success').dataset.id = prod.id
     templateCarrito.querySelector('.btn-danger').dataset.id = prod.id
     templateCarrito.querySelector('span').textContent = prod.cantidad * prod.precio
     templateCarrito.querySelector('.impto').textContent = prod.cantidad * prod.precio * 0.19
@@ -135,7 +141,7 @@ const pintarFooter = () => {
     pintarCarrito()
 
     Swal.fire({
-      title: 'Ohh!! Vuelve a comprar',
+      title: 'Ooh!! Vuelve a comprar',
       text: 'Haz vaciado tu carrito!',
       icon: 'success',
       confirmButtonText: 'Cool'
@@ -144,30 +150,30 @@ const pintarFooter = () => {
 
   const btnfinalizar = document.getElementById('finalizar-compra')
   btnfinalizar.addEventListener('click', ()=> {
-  if (Object.keys(productosSeleccionadoEnCarrito).length !== 0){
-    Swal.fire({
-      title: "Pedido confirmado",
-      text: "Será preparado tu pedido",
-      imageUrl: 'https://unsplash.it/400/200',
-      imageWidth: 170,
-      imageHeight: 159,
-      imageAlt: "Ok image",
-    })
-  }else{
-    Swal.fire({
-      title: 'Ohh!! No puedes finalizar ',
-      text: 'Debes llenar tu carrito!',
-      icon: 'success',
-      confirmButtonText: 'Cool'
-    })
-  }
-  productosSeleccionadoEnCarrito = {}
-  pintarCarrito()
+    if (Object.keys(productosSeleccionadoEnCarrito).length !== 0){
+      Swal.fire({
+        title: "Pedido confirmado",
+        text: "Será preparado tu pedido",
+        imageUrl: 'https://unsplash.it/400/200',
+        imageWidth: 170,
+        imageHeight: 159,
+        imageAlt: "Ok image",
+      })
+    }else{
+      Swal.fire({
+        title: 'Ooh!! No puedes finalizar ',
+        text: 'Debes llenar tu carrito!',
+        icon: 'success',
+        confirmButtonText: 'Cool'
+      })
+    }
+    productosSeleccionadoEnCarrito = {}
+    pintarCarrito()
   })
 }
 
 const btnAccion = e => {
-  console.log(e.target)
+  // console.log(e.target)
   if(e.target.classList.contains('btn-info')){
     
     const producto = productosSeleccionadoEnCarrito[e.target.dataset.id]
