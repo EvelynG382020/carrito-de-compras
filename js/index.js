@@ -63,7 +63,6 @@ const addCarrito = e => {
     e.target.onmouseover = () =>{
       e.target.style.backgroundColor = 'green'
     }
-    
     Swal.fire({
       title: 'Genial!',
       text: 'Haz escogido un buen producto !',

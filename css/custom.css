@@ -11961,11 +11961,11 @@ fieldset:disabled .btn {
 }
 
 nav, .color-card-form {
-  background-color: #9baa7e;
+  background-color: white;
 }
 
 footer {
-  background-color: #9baa7e;
+  background-color: whitesmoke;
 }
 
 img {
@@ -11990,7 +11990,7 @@ img {
 }
 
 p {
-  color: #333;
+  color: white;
   font-family: Verdana, sans-serif;
   font-size: 16px;
 }
@@ -12003,5 +12003,11 @@ p::first-letter {
 
 p::first-line {
   color: #32992f;
+}
+
+body {
+  background-image: url("../images/sean-stratton.jpg");
+  background-size: cover;
+  background-position: center;
 }
 /*# sourceMappingURL=custom.css.map */

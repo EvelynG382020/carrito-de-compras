@@ -47,9 +47,9 @@
       </nav>
     </header>
     <main id="productos">
-      <img id="no-rounded" src="images/991-1200x200.jpeg" alt="logo-main" />
+      <!-- <img id="no-rounded" src="images/991-1200x200.jpeg" alt="logo-main" /> -->
       <div class="container">
-        <h1 class="m-3">Figuras de Yeso  🎨  </h1>
+        <h1 id="titulo-principal" class="m-3 text-white-50">Figuras de Yeso  🎨  </h1>
         <hr/>
         <div class="row" id="cards"></div>
       </div>
@@ -101,9 +101,9 @@
               <th scope="col">Total a pago</th>
             </tr>
           </thead>
-          <tbody id="items"></tbody>
+          <tbody id="items" class="text-white-50"></tbody>
           <tfoot>
-            <tr id="footer"⏰ >
+            <tr id="footer" >
               <th scope="row" colspan="5">
                 Carrito vacío - comience a comprar!
               </th>
@@ -135,7 +135,7 @@
             <div
               class="col-12 col-sm-12 col-md-6 col-lg-6 text-center shadow mt-4 mt-md-0"
             >
-              <h2>Qué representa el Buda?!</h2>
+              <h2 class="text-white-50">Qué representa el Buda?!</h2>
               <p class="text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Incidunt odio error perferendis, id omnis blanditiis vitae
@@ -161,27 +161,13 @@
 
     <footer id="contacto">
       <div class="container p-4">
-        <div
-          class="row g-4 d-flex justify-content-between align-content-between"
-        >
-          <div
-            class="col-12 col-sm-6 col-md-6 text-center p-3"
-            style="width: 18rem"
-          >
-            <img
-              class="rounded float-start img-thumbnail"
-              src="images/logo_size_nav.jpg"
-              alt="logo-footer"
-            />
-          </div>
+        <div class="row g-4 d-flex justify-content-between align-content-between">
           <div class="col-12 col-sm-6 col-md-6 p-3">
             <a href="views/contact.html"><h6 class="text-uppercase mb-4 font-weight-bold grow">Contacto</h6></a>
-            <p><i class="bi bi-person-lines-fill mr-3"></i> Agente Evelyn Gomez Frez
-            </p>
-            <p><i class="bi bi-house-door mr-3"></i> Chile, Providencia 10012
-            </p>
-            <p><i class="bi bi-envelope mr-3 "></i> info@gmail.com</p>
-            <a href="https://wa.me/56984487732"><p><i class="bi bi-whatsapp mr-3"></i> 569 12345678</p></a>
+            <p><i id="icon" class="bi bi-person-lines-fill mr-3 text-black" ></i> Agente Evelyn Gomez Frez</p>
+            <p><i class="bi bi-house-door mr-3  text-black"></i> Chile, Providencia 10012</p></p>
+            <p><i class="bi bi-envelope mr-3  text-black"></i> info@gmail.com</p>
+            <a href="https://wa.me/56984487732"><p><i class="bi bi-whatsapp mr-3 text-black"></i> 569 12345678</p></a>
           </div>
         </div>
       </div>

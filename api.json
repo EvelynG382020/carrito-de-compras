@@ -6,7 +6,7 @@
     "precio": 10000,
     "descripcion": "Buda 30x30 en color oro",
     "cantidad": 0,
-    "img": "images/buda.jpeg"
+    "img": "images/buda1.jpg"
   },
   {
     "id": 1,
@@ -14,7 +14,7 @@
     "precio": 20000,
     "descripcion": "Buda 50x50 en color plata",
     "cantidad": 0,
-    "img": "images/ganesha.jpeg"
+    "img": "images/sarah-ball.jpg"
   },
   {
     "id": 2,
@@ -22,7 +22,7 @@
     "precio": 40000,
     "descripcion": "Buda 30x30 en color oro",
     "cantidad": 0,
-    "img": "images/abhaya.jpeg"
+    "img": "images/megan-thomas.jpg"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "precio": 18000,
     "descripcion": "Buda 30x30 en color plata",
     "cantidad": 0,
-    "img": "images/siddharta.jpeg"
+    "img": "images/samuel-austin.jpg"
   },
   {
     "id": 4,
@@ -38,6 +38,6 @@
     "precio": 25000,
     "descripcion": "Buda 30x30 en color beige",
     "cantidad": 0,
-    "img": "images/durmiente.jpeg"
+    "img": "images/patrick-connor.jpg"
   }
 ]
