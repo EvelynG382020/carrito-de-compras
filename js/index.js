@@ -196,7 +196,6 @@ const obtenerDatos = async() => {//función flecha en variable const
   try{ //se usa con try catch, donde try es lo que quiero intentar
     const respuesta = await fetch('https://jsonplaceholder.typicode.com/users')//esto es con await, esperemos la respuesta de fetch
     const data = await respuesta.json() // guardo la respuesta en formato json en una const data
-    console.table(data)//recordar que results es un objeto que están dentro del data que me arroja la api
     data.forEach(arr => {
       const { name, username, phone, email } = arr
       document.getElementById('clientes').innerHTML += `
@@ -208,7 +207,7 @@ const obtenerDatos = async() => {//función flecha en variable const
       </tr>
       `
     })
-  }catch(error){// y catch el mensaje de error si algo sale mal
+  }catch(error){
     console.log(error)
   }
 }

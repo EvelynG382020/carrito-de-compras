@@ -125,29 +125,11 @@
           <td></td>
           <td class="font-weight-bold">$ <span>5000</span></td>
         </template>
-        <table class="table table-dark">
-          <div class="container">
-            <thead>
-              <tr>
-                <th>Nombre</th>
-                <th>Usuario</th>
-                <th>Contacto</th>
-                <th>Mail</th>
-              </tr>
-            </thead>
-            <tbody id="clientes">
-                <!-- aca ingresan los datos del json clientes -->
-            </tbody>
-          </div>
-        </table>
       </div>
       <section id="servicios">
         <div class="container">
-          <div
-            class="row g-4 my-5 d-flex justify-content-center align-content-center align-items-center">
-            <!-- col-12 col-sm-6 col-md-4 col-lg-6 -->
-            <div
-              class="col-12 col-sm-12 col-md-6 col-lg-6 text-center shadow mt-4 mt-md-0">
+          <div class="row g-4 my-5 d-flex justify-content-center align-content-center align-items-center">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center shadow mt-4 mt-md-0">
               <h2 class="text-white-50">Qué representa el Buda?!</h2>
               <p class="text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -160,12 +142,23 @@
                 ea totam, dolor vitae..
               </p>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 align-items-center">
-              <img
-                class="redondo float-end max-width: 50%; height: 50%;"
-                src="images/104-400x500.jpeg"
-                alt="atrapa-sueños"
-              />
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+              <h2 class="m-3 text-center text-white-50">Nuestros Clientes 👱 </h2>
+              <div class="table-responsive">
+                <table class="table table-dark">
+                  <thead>
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Usuario</th>
+                      <th>Contacto</th>
+                      <th>Mail</th>
+                    </tr>
+                  </thead>
+                  <tbody id="clientes">
+                      <!-- aca ingresan los datos del json clientes -->
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
