@@ -48,12 +48,10 @@
     </header>
     <main id="productos">
       <!-- <img id="no-rounded" src="images/991-1200x200.jpeg" alt="logo-main" /> -->
-      <div class="container">
-        <h1 id="titulo-principal" class="m-3 text-white-50">Figuras de Yeso  🎨  </h1>
-        <hr/>
+      <div id="titulo-principal" class="container">
+        <h1 class="m-3 text-white-50">Figuras de Yeso  🎨  </h1>
         <div class="row" id="cards"></div>
       </div>
-
       <template id="template-carrito">
         <tr>
           <th scope="row">id</th>
@@ -101,6 +99,10 @@
               <th scope="col">Total a pago</th>
             </tr>
           </thead>
+          <span id="UF" class="text-center text-black"></span> |
+          <span id="DolarO" class="text-center text-black"></span> |  
+          <span id="Euro" class="text-center text-black"></span>
+          <hr>  
           <tbody id="items" class="text-black"></tbody>
           <tfoot>
             <tr id="footer" >

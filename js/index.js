@@ -212,3 +212,14 @@ const obtenerDatos = async() => {//función flecha en variable const
   }
 }
 obtenerDatos()
+
+fetch('https://mindicador.cl/api')
+  .then(function(response) {
+    return response.json();
+  }).then(function(dailyIndicators) {
+    document.getElementById("UF").innerHTML = 'UF $' + dailyIndicators.uf.valor;
+    document.getElementById("DolarO").innerHTML = 'USD $' + dailyIndicators.dolar.valor;
+    document.getElementById("Euro").innerHTML = 'Euro $' + dailyIndicators.euro.valor;
+  }).catch(function(error) {
+    console.log('Requestfailed', error);
+});
